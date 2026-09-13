@@ -1,0 +1,226 @@
+{
+  "report_name": "Agentic-Stitcher Phase 1 normalized capture validation",
+  "generated_at_utc": "2026-09-12T03:44:00.581809+00:00",
+  "project_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher",
+  "capture_reports": [
+    {
+      "capture_name": "single_room",
+      "capture_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_room",
+      "frame_ids_match": true,
+      "depth_frame_count": 1715,
+      "confidence_frame_count": 1715,
+      "odometry_row_count": 1715,
+      "imu_row_count": 3689,
+      "imu_timestamps_monotonic": true,
+      "odometry_timestamps_monotonic": true,
+      "camera_matrix_shape": [
+        3,
+        3
+      ],
+      "sample_frames": [
+        {
+          "frame_id": 0,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65575.597600791,
+          "nearest_imu_time_difference_seconds": 0.09862050066294614
+        },
+        {
+          "frame_id": 857,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65594.067143916,
+          "nearest_imu_time_difference_seconds": 0.0016880839975783601
+        },
+        {
+          "frame_id": 1714,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65612.769969958,
+          "nearest_imu_time_difference_seconds": 0.004662957988330163
+        }
+      ],
+      "metadata": {
+        "depth_units": "unknown",
+        "coordinate_convention": "unknown",
+        "quaternion_convention": "unknown",
+        "pose_direction": "unknown",
+        "frame_count_depth": 1715,
+        "frame_count_confidence": 1715,
+        "frame_count_odometry": 1715,
+        "imu_row_count": 3689,
+        "project_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_room"
+      }
+    },
+    {
+      "capture_name": "single_scan_floor_only",
+      "capture_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_scan_floor_only",
+      "frame_ids_match": true,
+      "depth_frame_count": 5251,
+      "confidence_frame_count": 5251,
+      "odometry_row_count": 5251,
+      "imu_row_count": 11397,
+      "imu_timestamps_monotonic": true,
+      "odometry_timestamps_monotonic": true,
+      "camera_matrix_shape": [
+        3,
+        3
+      ],
+      "sample_frames": [
+        {
+          "frame_id": 0,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65621.573783291,
+          "nearest_imu_time_difference_seconds": 0.0882792506745318
+        },
+        {
+          "frame_id": 2625,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65678.26545025,
+          "nearest_imu_time_difference_seconds": 0.003713875004905276
+        },
+        {
+          "frame_id": 5250,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65736.357001125,
+          "nearest_imu_time_difference_seconds": 0.003812750001088716
+        }
+      ],
+      "metadata": {
+        "depth_units": "unknown",
+        "coordinate_convention": "unknown",
+        "quaternion_convention": "unknown",
+        "pose_direction": "unknown",
+        "frame_count_depth": 5251,
+        "frame_count_confidence": 5251,
+        "frame_count_odometry": 5251,
+        "imu_row_count": 11397,
+        "project_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_scan_floor_only"
+      }
+    },
+    {
+      "capture_name": "single_scan_with_ceiling",
+      "capture_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_scan_with_ceiling",
+      "frame_ids_match": true,
+      "depth_frame_count": 9745,
+      "confidence_frame_count": 9745,
+      "odometry_row_count": 9745,
+      "imu_row_count": 21339,
+      "imu_timestamps_monotonic": true,
+      "odometry_timestamps_monotonic": true,
+      "camera_matrix_shape": [
+        3,
+        3
+      ],
+      "sample_frames": [
+        {
+          "frame_id": 0,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65764.237587125,
+          "nearest_imu_time_difference_seconds": 0.08309275000647176
+        },
+        {
+          "frame_id": 4872,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65869.885760041,
+          "nearest_imu_time_difference_seconds": 0.0034439159935573116
+        },
+        {
+          "frame_id": 9744,
+          "depth_shape": [
+            192,
+            256
+          ],
+          "depth_dtype": "uint16",
+          "confidence_shape": [
+            192,
+            256
+          ],
+          "confidence_dtype": "uint8",
+          "odometry_timestamp": 65979.16695725,
+          "nearest_imu_time_difference_seconds": 0.002547875003074296
+        }
+      ],
+      "metadata": {
+        "depth_units": "unknown",
+        "coordinate_convention": "unknown",
+        "quaternion_convention": "unknown",
+        "pose_direction": "unknown",
+        "frame_count_depth": 9745,
+        "frame_count_confidence": 9745,
+        "frame_count_odometry": 9745,
+        "imu_row_count": 21339,
+        "project_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_scan_with_ceiling"
+      }
+    }
+  ]
+}
