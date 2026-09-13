@@ -1,0 +1,814 @@
+{
+  "report_name": "Agentic-Stitcher Phase 3 point-cloud reconstruction",
+  "project_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher",
+  "output_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs",
+  "capture_reports": [
+    {
+      "capture_name": "single_room",
+      "single_frame_id": 857,
+      "accumulation_frame_ids": [
+        0,
+        43,
+        87,
+        131,
+        175,
+        219,
+        263,
+        307,
+        351,
+        395,
+        439,
+        483,
+        527,
+        571,
+        615,
+        659,
+        703,
+        747,
+        791,
+        835,
+        878,
+        922,
+        966,
+        1010,
+        1054,
+        1098,
+        1142,
+        1186,
+        1230,
+        1274,
+        1318,
+        1362,
+        1406,
+        1450,
+        1494,
+        1538,
+        1582,
+        1626,
+        1670,
+        1714
+      ],
+      "single_frame": {
+        "unfiltered_point_count": 12288,
+        "confidence_filtered_point_count": 11982
+      },
+      "accumulation": {
+        "frame_count": 40,
+        "raw_point_count": 119982,
+        "voxel_downsampled_point_count": 89439,
+        "statistical_filtered_point_count": 86105,
+        "frame_statistics": [
+          {
+            "frame_id": 0,
+            "point_count": 3065
+          },
+          {
+            "frame_id": 43,
+            "point_count": 3047
+          },
+          {
+            "frame_id": 87,
+            "point_count": 3069
+          },
+          {
+            "frame_id": 131,
+            "point_count": 3056
+          },
+          {
+            "frame_id": 175,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 219,
+            "point_count": 2356
+          },
+          {
+            "frame_id": 263,
+            "point_count": 3069
+          },
+          {
+            "frame_id": 307,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 351,
+            "point_count": 3063
+          },
+          {
+            "frame_id": 395,
+            "point_count": 3069
+          },
+          {
+            "frame_id": 439,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 483,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 527,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 571,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 615,
+            "point_count": 3063
+          },
+          {
+            "frame_id": 659,
+            "point_count": 3050
+          },
+          {
+            "frame_id": 703,
+            "point_count": 3037
+          },
+          {
+            "frame_id": 747,
+            "point_count": 3062
+          },
+          {
+            "frame_id": 791,
+            "point_count": 3059
+          },
+          {
+            "frame_id": 835,
+            "point_count": 2991
+          },
+          {
+            "frame_id": 878,
+            "point_count": 2952
+          },
+          {
+            "frame_id": 922,
+            "point_count": 2958
+          },
+          {
+            "frame_id": 966,
+            "point_count": 2976
+          },
+          {
+            "frame_id": 1010,
+            "point_count": 3001
+          },
+          {
+            "frame_id": 1054,
+            "point_count": 3058
+          },
+          {
+            "frame_id": 1098,
+            "point_count": 2978
+          },
+          {
+            "frame_id": 1142,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1186,
+            "point_count": 2376
+          },
+          {
+            "frame_id": 1230,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1274,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1318,
+            "point_count": 3043
+          },
+          {
+            "frame_id": 1362,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1406,
+            "point_count": 2970
+          },
+          {
+            "frame_id": 1450,
+            "point_count": 2973
+          },
+          {
+            "frame_id": 1494,
+            "point_count": 2954
+          },
+          {
+            "frame_id": 1538,
+            "point_count": 2978
+          },
+          {
+            "frame_id": 1582,
+            "point_count": 3015
+          },
+          {
+            "frame_id": 1626,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1670,
+            "point_count": 2911
+          },
+          {
+            "frame_id": 1714,
+            "point_count": 2991
+          }
+        ],
+        "camera_position_count": 40
+      },
+      "bounds": {
+        "raw": {
+          "minimum": [
+            -6.742156367635664,
+            -1.5874619354065271,
+            -1.5663324519003508
+          ],
+          "maximum": [
+            2.649627001329928,
+            0.6662912258247785,
+            5.504307657972888
+          ]
+        },
+        "filtered": {
+          "minimum": [
+            -4.79263415672421,
+            -1.5874619354065271,
+            -1.4620015913296593
+          ],
+          "maximum": [
+            2.649627001329928,
+            0.6662912258247785,
+            5.470354210001071
+          ]
+        }
+      },
+      "assumptions": {
+        "depth_to_pose_scale": 0.001,
+        "intrinsic_source_resolution": [
+          1920.0,
+          1440.0
+        ],
+        "intrinsics_scaled_to_depth_resolution": true,
+        "confidence_threshold": 1,
+        "pixel_stride": 4,
+        "single_frame_pixel_stride": 2,
+        "voxel_size": 0.02,
+        "quaternion_order": "qx, qy, qz, qw",
+        "pose_direction": "camera-to-world; provisional",
+        "depth_unit": "unknown; scale 0.001 is provisional"
+      },
+      "outputs": {
+        "single_frame_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_room/single_frame_camera_space.png",
+        "confidence_comparison_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_room/confidence_filter_comparison.png",
+        "raw_accumulated_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_room/accumulated_world_space_raw.png",
+        "filtered_accumulated_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_room/accumulated_world_space_filtered.png",
+        "camera_and_cloud_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_room/camera_and_point_cloud.png",
+        "raw_ply": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_room/accumulated_raw.ply",
+        "filtered_ply": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_room/accumulated_filtered.ply"
+      }
+    },
+    {
+      "capture_name": "single_scan_floor_only",
+      "single_frame_id": 2625,
+      "accumulation_frame_ids": [
+        0,
+        134,
+        269,
+        403,
+        538,
+        673,
+        807,
+        942,
+        1076,
+        1211,
+        1346,
+        1480,
+        1615,
+        1750,
+        1884,
+        2019,
+        2153,
+        2288,
+        2423,
+        2557,
+        2692,
+        2826,
+        2961,
+        3096,
+        3230,
+        3365,
+        3500,
+        3634,
+        3769,
+        3903,
+        4038,
+        4173,
+        4307,
+        4442,
+        4576,
+        4711,
+        4846,
+        4980,
+        5115,
+        5250
+      ],
+      "single_frame": {
+        "unfiltered_point_count": 12288,
+        "confidence_filtered_point_count": 12288
+      },
+      "accumulation": {
+        "frame_count": 40,
+        "raw_point_count": 116831,
+        "voxel_downsampled_point_count": 104045,
+        "statistical_filtered_point_count": 99747,
+        "frame_statistics": [
+          {
+            "frame_id": 0,
+            "point_count": 3046
+          },
+          {
+            "frame_id": 134,
+            "point_count": 3071
+          },
+          {
+            "frame_id": 269,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 403,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 538,
+            "point_count": 3055
+          },
+          {
+            "frame_id": 673,
+            "point_count": 2914
+          },
+          {
+            "frame_id": 807,
+            "point_count": 3058
+          },
+          {
+            "frame_id": 942,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1076,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1211,
+            "point_count": 2754
+          },
+          {
+            "frame_id": 1346,
+            "point_count": 3018
+          },
+          {
+            "frame_id": 1480,
+            "point_count": 2378
+          },
+          {
+            "frame_id": 1615,
+            "point_count": 3021
+          },
+          {
+            "frame_id": 1750,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1884,
+            "point_count": 2976
+          },
+          {
+            "frame_id": 2019,
+            "point_count": 2168
+          },
+          {
+            "frame_id": 2153,
+            "point_count": 2121
+          },
+          {
+            "frame_id": 2288,
+            "point_count": 2896
+          },
+          {
+            "frame_id": 2423,
+            "point_count": 2901
+          },
+          {
+            "frame_id": 2557,
+            "point_count": 3071
+          },
+          {
+            "frame_id": 2692,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 2826,
+            "point_count": 3033
+          },
+          {
+            "frame_id": 2961,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 3096,
+            "point_count": 2604
+          },
+          {
+            "frame_id": 3230,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 3365,
+            "point_count": 3060
+          },
+          {
+            "frame_id": 3500,
+            "point_count": 3034
+          },
+          {
+            "frame_id": 3634,
+            "point_count": 3069
+          },
+          {
+            "frame_id": 3769,
+            "point_count": 2119
+          },
+          {
+            "frame_id": 3903,
+            "point_count": 2800
+          },
+          {
+            "frame_id": 4038,
+            "point_count": 2825
+          },
+          {
+            "frame_id": 4173,
+            "point_count": 2865
+          },
+          {
+            "frame_id": 4307,
+            "point_count": 3068
+          },
+          {
+            "frame_id": 4442,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 4576,
+            "point_count": 3066
+          },
+          {
+            "frame_id": 4711,
+            "point_count": 3050
+          },
+          {
+            "frame_id": 4846,
+            "point_count": 3002
+          },
+          {
+            "frame_id": 4980,
+            "point_count": 3071
+          },
+          {
+            "frame_id": 5115,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 5250,
+            "point_count": 2997
+          }
+        ],
+        "camera_position_count": 40
+      },
+      "bounds": {
+        "raw": {
+          "minimum": [
+            -7.942326698480819,
+            -2.3541431507000308,
+            -1.2924194534319438
+          ],
+          "maximum": [
+            3.2581232460770506,
+            0.9847239400351298,
+            10.07057080058365
+          ]
+        },
+        "filtered": {
+          "minimum": [
+            -7.919627546480044,
+            -2.349132273665989,
+            -1.1173798862650548
+          ],
+          "maximum": [
+            3.2581232460770506,
+            0.9845751592093155,
+            10.01820193265631
+          ]
+        }
+      },
+      "assumptions": {
+        "depth_to_pose_scale": 0.001,
+        "intrinsic_source_resolution": [
+          1920.0,
+          1440.0
+        ],
+        "intrinsics_scaled_to_depth_resolution": true,
+        "confidence_threshold": 1,
+        "pixel_stride": 4,
+        "single_frame_pixel_stride": 2,
+        "voxel_size": 0.02,
+        "quaternion_order": "qx, qy, qz, qw",
+        "pose_direction": "camera-to-world; provisional",
+        "depth_unit": "unknown; scale 0.001 is provisional"
+      },
+      "outputs": {
+        "single_frame_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_floor_only/single_frame_camera_space.png",
+        "confidence_comparison_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_floor_only/confidence_filter_comparison.png",
+        "raw_accumulated_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_floor_only/accumulated_world_space_raw.png",
+        "filtered_accumulated_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_floor_only/accumulated_world_space_filtered.png",
+        "camera_and_cloud_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_floor_only/camera_and_point_cloud.png",
+        "raw_ply": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_floor_only/accumulated_raw.ply",
+        "filtered_ply": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_floor_only/accumulated_filtered.ply"
+      }
+    },
+    {
+      "capture_name": "single_scan_with_ceiling",
+      "single_frame_id": 4872,
+      "accumulation_frame_ids": [
+        0,
+        249,
+        499,
+        749,
+        999,
+        1249,
+        1499,
+        1748,
+        1998,
+        2248,
+        2498,
+        2748,
+        2998,
+        3248,
+        3497,
+        3747,
+        3997,
+        4247,
+        4497,
+        4747,
+        4996,
+        5246,
+        5496,
+        5746,
+        5996,
+        6246,
+        6496,
+        6745,
+        6995,
+        7245,
+        7495,
+        7745,
+        7995,
+        8244,
+        8494,
+        8744,
+        8994,
+        9244,
+        9494,
+        9744
+      ],
+      "single_frame": {
+        "unfiltered_point_count": 12288,
+        "confidence_filtered_point_count": 12130
+      },
+      "accumulation": {
+        "frame_count": 40,
+        "raw_point_count": 118917,
+        "voxel_downsampled_point_count": 110474,
+        "statistical_filtered_point_count": 105309,
+        "frame_statistics": [
+          {
+            "frame_id": 0,
+            "point_count": 2935
+          },
+          {
+            "frame_id": 249,
+            "point_count": 3016
+          },
+          {
+            "frame_id": 499,
+            "point_count": 2201
+          },
+          {
+            "frame_id": 749,
+            "point_count": 2843
+          },
+          {
+            "frame_id": 999,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 1249,
+            "point_count": 3026
+          },
+          {
+            "frame_id": 1499,
+            "point_count": 3006
+          },
+          {
+            "frame_id": 1748,
+            "point_count": 3062
+          },
+          {
+            "frame_id": 1998,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 2248,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 2498,
+            "point_count": 2975
+          },
+          {
+            "frame_id": 2748,
+            "point_count": 2959
+          },
+          {
+            "frame_id": 2998,
+            "point_count": 3071
+          },
+          {
+            "frame_id": 3248,
+            "point_count": 2999
+          },
+          {
+            "frame_id": 3497,
+            "point_count": 3048
+          },
+          {
+            "frame_id": 3747,
+            "point_count": 3006
+          },
+          {
+            "frame_id": 3997,
+            "point_count": 2620
+          },
+          {
+            "frame_id": 4247,
+            "point_count": 3005
+          },
+          {
+            "frame_id": 4497,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 4747,
+            "point_count": 3058
+          },
+          {
+            "frame_id": 4996,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 5246,
+            "point_count": 3071
+          },
+          {
+            "frame_id": 5496,
+            "point_count": 3071
+          },
+          {
+            "frame_id": 5746,
+            "point_count": 2724
+          },
+          {
+            "frame_id": 5996,
+            "point_count": 3026
+          },
+          {
+            "frame_id": 6246,
+            "point_count": 3041
+          },
+          {
+            "frame_id": 6496,
+            "point_count": 3001
+          },
+          {
+            "frame_id": 6745,
+            "point_count": 3030
+          },
+          {
+            "frame_id": 6995,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 7245,
+            "point_count": 3037
+          },
+          {
+            "frame_id": 7495,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 7745,
+            "point_count": 2614
+          },
+          {
+            "frame_id": 7995,
+            "point_count": 2949
+          },
+          {
+            "frame_id": 8244,
+            "point_count": 3068
+          },
+          {
+            "frame_id": 8494,
+            "point_count": 2838
+          },
+          {
+            "frame_id": 8744,
+            "point_count": 2854
+          },
+          {
+            "frame_id": 8994,
+            "point_count": 3044
+          },
+          {
+            "frame_id": 9244,
+            "point_count": 3072
+          },
+          {
+            "frame_id": 9494,
+            "point_count": 3071
+          },
+          {
+            "frame_id": 9744,
+            "point_count": 3072
+          }
+        ],
+        "camera_position_count": 40
+      },
+      "bounds": {
+        "raw": {
+          "minimum": [
+            -5.361617814898841,
+            -1.6123407967261292,
+            -4.309315565818009
+          ],
+          "maximum": [
+            7.897637713076878,
+            2.235293370997453,
+            9.756633708088735
+          ]
+        },
+        "filtered": {
+          "minimum": [
+            -5.2372722023872385,
+            -1.6123407967261292,
+            -2.7372102996893006
+          ],
+          "maximum": [
+            7.833289168699267,
+            2.103226452187504,
+            9.756633708088735
+          ]
+        }
+      },
+      "assumptions": {
+        "depth_to_pose_scale": 0.001,
+        "intrinsic_source_resolution": [
+          1920.0,
+          1440.0
+        ],
+        "intrinsics_scaled_to_depth_resolution": true,
+        "confidence_threshold": 1,
+        "pixel_stride": 4,
+        "single_frame_pixel_stride": 2,
+        "voxel_size": 0.02,
+        "quaternion_order": "qx, qy, qz, qw",
+        "pose_direction": "camera-to-world; provisional",
+        "depth_unit": "unknown; scale 0.001 is provisional"
+      },
+      "outputs": {
+        "single_frame_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_with_ceiling/single_frame_camera_space.png",
+        "confidence_comparison_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_with_ceiling/confidence_filter_comparison.png",
+        "raw_accumulated_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_with_ceiling/accumulated_world_space_raw.png",
+        "filtered_accumulated_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_with_ceiling/accumulated_world_space_filtered.png",
+        "camera_and_cloud_plot": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_with_ceiling/camera_and_point_cloud.png",
+        "raw_ply": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_with_ceiling/accumulated_raw.ply",
+        "filtered_ply": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_with_ceiling/accumulated_filtered.ply"
+      }
+    }
+  ]
+}
