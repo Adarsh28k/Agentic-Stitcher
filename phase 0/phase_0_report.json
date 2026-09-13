@@ -1,0 +1,571 @@
+{
+  "report_name": "Agentic-Stitcher Phase 0 dataset validation",
+  "generated_at_utc": "2026-09-12T03:23:34.195241+00:00",
+  "project_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher",
+  "confirmed_facts": [
+    "The expected capture folders were checked.",
+    "Depth and confidence files are checked by PNG header metadata.",
+    "Depth, confidence, and odometry frame IDs are compared.",
+    "IMU and odometry timestamp ordering is checked."
+  ],
+  "capture_reports": [
+    {
+      "capture_name": "single_room",
+      "capture_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_room",
+      "files_present": {
+        "camera_matrix_csv": true,
+        "imu_csv": true,
+        "odometry_csv": true,
+        "depth_folder": true,
+        "confidence_folder": true,
+        "rgb_mp4": true
+      },
+      "csv_headers": {
+        "camera_matrix": [],
+        "imu": [
+          "timestamp",
+          "a_x",
+          "a_y",
+          "a_z",
+          "alpha_x",
+          "alpha_y",
+          "alpha_z"
+        ],
+        "odometry": [
+          "timestamp",
+          "frame",
+          "x",
+          "y",
+          "z",
+          "qx",
+          "qy",
+          "qz",
+          "qw",
+          "fx",
+          "fy",
+          "cx",
+          "cy",
+          "distortion_center_x",
+          "distortion_center_y"
+        ]
+      },
+      "row_counts": {
+        "camera_matrix": 3,
+        "imu": 3689,
+        "odometry": 1715
+      },
+      "timestamps": {
+        "imu": {
+          "count": 3689,
+          "invalid_values": [],
+          "first": 65575.69622129167,
+          "last": 65612.825717,
+          "span_seconds": 37.12949570833007,
+          "monotonic_non_decreasing": true,
+          "decrease_indices": [],
+          "minimum_interval_seconds": 0.010065541660878807,
+          "maximum_interval_seconds": 0.01006937499914784,
+          "average_interval_seconds": 0.010067650680132881
+        },
+        "odometry": {
+          "count": 1715,
+          "invalid_values": [],
+          "first": 65575.597600791,
+          "last": 65612.769969958,
+          "span_seconds": 37.17236916699039,
+          "monotonic_non_decreasing": true,
+          "decrease_indices": [],
+          "minimum_interval_seconds": 0.0166689579928061,
+          "maximum_interval_seconds": 0.050007957994239405,
+          "average_interval_seconds": 0.02168749659684387
+        }
+      },
+      "frame_alignment": {
+        "depth_sequence": {
+          "count": 1715,
+          "first_id": 0,
+          "last_id": 1714,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "confidence_sequence": {
+          "count": 1715,
+          "first_id": 0,
+          "last_id": 1714,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "odometry_sequence": {
+          "count": 1715,
+          "first_id": 0,
+          "last_id": 1714,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "invalid_depth_names": [],
+        "invalid_confidence_names": [],
+        "invalid_odometry_frames": [],
+        "depth_and_confidence_match": true,
+        "depth_and_odometry_match": true,
+        "confidence_and_odometry_match": true
+      },
+      "image_examples": {
+        "depth/000000.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "depth/000857.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "depth/001714.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "confidence/000000.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        },
+        "confidence/000857.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        },
+        "confidence/001714.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        }
+      },
+      "intrinsics": {
+        "camera_matrix": {
+          "fx": 1599.6957,
+          "fy": 1599.6957,
+          "cx": 955.5105,
+          "cy": 717.8084
+        },
+        "odometry_first_row": {
+          "fx": 1597.8881,
+          "fy": 1597.8881,
+          "cx": 955.3694,
+          "cy": 717.7071
+        },
+        "odometry_last_row": {
+          "fx": 1599.6957,
+          "fy": 1599.6957,
+          "cx": 955.5105,
+          "cy": 717.8084
+        }
+      },
+      "video": {
+        "exists": true,
+        "size_bytes": 43716638,
+        "frame_timestamp_mapping_verified": false,
+        "note": "The video file exists, but this validator does not decode its frame metadata yet."
+      },
+      "unresolved_assumptions": [
+        "Depth PNG units are not documented in the supplied files.",
+        "Camera and world coordinate conventions are not documented in the supplied files.",
+        "Quaternion convention and pose direction are not documented in the supplied files.",
+        "The exact RGB-video to odometry timestamp mapping is not verified here."
+      ]
+    },
+    {
+      "capture_name": "single_scan_floor_only",
+      "capture_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_scan_floor_only",
+      "files_present": {
+        "camera_matrix_csv": true,
+        "imu_csv": true,
+        "odometry_csv": true,
+        "depth_folder": true,
+        "confidence_folder": true,
+        "rgb_mp4": true
+      },
+      "csv_headers": {
+        "camera_matrix": [],
+        "imu": [
+          "timestamp",
+          "a_x",
+          "a_y",
+          "a_z",
+          "alpha_x",
+          "alpha_y",
+          "alpha_z"
+        ],
+        "odometry": [
+          "timestamp",
+          "frame",
+          "x",
+          "y",
+          "z",
+          "qx",
+          "qy",
+          "qz",
+          "qw",
+          "fx",
+          "fy",
+          "cx",
+          "cy",
+          "distortion_center_x",
+          "distortion_center_y"
+        ]
+      },
+      "row_counts": {
+        "camera_matrix": 3,
+        "imu": 11397,
+        "odometry": 5251
+      },
+      "timestamps": {
+        "imu": {
+          "count": 11397,
+          "invalid_values": [],
+          "first": 65621.66206254167,
+          "last": 65736.41116287501,
+          "span_seconds": 114.74910033334163,
+          "monotonic_non_decreasing": true,
+          "decrease_indices": [],
+          "minimum_interval_seconds": 0.010067166673252359,
+          "maximum_interval_seconds": 0.010070791671751067,
+          "average_interval_seconds": 0.010069243623494352
+        },
+        "odometry": {
+          "count": 5251,
+          "invalid_values": [],
+          "first": 65621.573783291,
+          "last": 65736.357001125,
+          "span_seconds": 114.78321783400315,
+          "monotonic_non_decreasing": true,
+          "decrease_indices": [],
+          "minimum_interval_seconds": 0.01666870800545439,
+          "maximum_interval_seconds": 0.050007583005935885,
+          "average_interval_seconds": 0.021863470063619647
+        }
+      },
+      "frame_alignment": {
+        "depth_sequence": {
+          "count": 5251,
+          "first_id": 0,
+          "last_id": 5250,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "confidence_sequence": {
+          "count": 5251,
+          "first_id": 0,
+          "last_id": 5250,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "odometry_sequence": {
+          "count": 5251,
+          "first_id": 0,
+          "last_id": 5250,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "invalid_depth_names": [],
+        "invalid_confidence_names": [],
+        "invalid_odometry_frames": [],
+        "depth_and_confidence_match": true,
+        "depth_and_odometry_match": true,
+        "confidence_and_odometry_match": true
+      },
+      "image_examples": {
+        "depth/000000.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "depth/002625.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "depth/005250.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "confidence/000000.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        },
+        "confidence/002625.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        },
+        "confidence/005250.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        }
+      },
+      "intrinsics": {
+        "camera_matrix": {
+          "fx": 1598.7919,
+          "fy": 1598.7919,
+          "cx": 955.38934,
+          "cy": 717.7579
+        },
+        "odometry_first_row": {
+          "fx": 1596.0804,
+          "fy": 1596.0804,
+          "cx": 955.4697,
+          "cy": 717.76526
+        },
+        "odometry_last_row": {
+          "fx": 1598.7919,
+          "fy": 1598.7919,
+          "cx": 955.38934,
+          "cy": 717.7579
+        }
+      },
+      "video": {
+        "exists": true,
+        "size_bytes": 134726501,
+        "frame_timestamp_mapping_verified": false,
+        "note": "The video file exists, but this validator does not decode its frame metadata yet."
+      },
+      "unresolved_assumptions": [
+        "Depth PNG units are not documented in the supplied files.",
+        "Camera and world coordinate conventions are not documented in the supplied files.",
+        "Quaternion convention and pose direction are not documented in the supplied files.",
+        "The exact RGB-video to odometry timestamp mapping is not verified here."
+      ]
+    },
+    {
+      "capture_name": "single_scan_with_ceiling",
+      "capture_path": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/single_scan_with_ceiling",
+      "files_present": {
+        "camera_matrix_csv": true,
+        "imu_csv": true,
+        "odometry_csv": true,
+        "depth_folder": true,
+        "confidence_folder": true,
+        "rgb_mp4": true
+      },
+      "csv_headers": {
+        "camera_matrix": [],
+        "imu": [
+          "timestamp",
+          "a_x",
+          "a_y",
+          "a_z",
+          "alpha_x",
+          "alpha_y",
+          "alpha_z"
+        ],
+        "odometry": [
+          "timestamp",
+          "frame",
+          "x",
+          "y",
+          "z",
+          "qx",
+          "qy",
+          "qz",
+          "qw",
+          "fx",
+          "fy",
+          "cx",
+          "cy",
+          "distortion_center_x",
+          "distortion_center_y"
+        ]
+      },
+      "row_counts": {
+        "camera_matrix": 3,
+        "imu": 21339,
+        "odometry": 9745
+      },
+      "timestamps": {
+        "imu": {
+          "count": 21339,
+          "invalid_values": [],
+          "first": 65764.320679875,
+          "last": 65979.199717125,
+          "span_seconds": 214.87903724999342,
+          "monotonic_non_decreasing": true,
+          "decrease_indices": [],
+          "minimum_interval_seconds": 0.010066874994663522,
+          "maximum_interval_seconds": 0.01007200000458397,
+          "average_interval_seconds": 0.010070252003467683
+        },
+        "odometry": {
+          "count": 9745,
+          "invalid_values": [],
+          "first": 65764.237587125,
+          "last": 65979.16695725,
+          "span_seconds": 214.92937012499897,
+          "monotonic_non_decreasing": true,
+          "decrease_indices": [],
+          "minimum_interval_seconds": 0.01666858300450258,
+          "maximum_interval_seconds": 0.05000754199863877,
+          "average_interval_seconds": 0.022057611876539304
+        }
+      },
+      "frame_alignment": {
+        "depth_sequence": {
+          "count": 9745,
+          "first_id": 0,
+          "last_id": 9744,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "confidence_sequence": {
+          "count": 9745,
+          "first_id": 0,
+          "last_id": 9744,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "odometry_sequence": {
+          "count": 9745,
+          "first_id": 0,
+          "last_id": 9744,
+          "duplicate_ids": [],
+          "missing_ids": [],
+          "starts_at_zero": true
+        },
+        "invalid_depth_names": [],
+        "invalid_confidence_names": [],
+        "invalid_odometry_frames": [],
+        "depth_and_confidence_match": true,
+        "depth_and_odometry_match": true,
+        "confidence_and_odometry_match": true
+      },
+      "image_examples": {
+        "depth/000000.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "depth/004872.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "depth/009744.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 16,
+          "color_type": 0
+        },
+        "confidence/000000.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        },
+        "confidence/004872.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        },
+        "confidence/009744.png": {
+          "valid_png_signature": true,
+          "has_ihdr": true,
+          "width": 256,
+          "height": 192,
+          "bit_depth": 8,
+          "color_type": 0
+        }
+      },
+      "intrinsics": {
+        "camera_matrix": {
+          "fx": 1601.0514,
+          "fy": 1601.0514,
+          "cx": 955.82275,
+          "cy": 717.7025
+        },
+        "odometry_first_row": {
+          "fx": 1581.1676,
+          "fy": 1581.1676,
+          "cx": 955.2852,
+          "cy": 717.6346
+        },
+        "odometry_last_row": {
+          "fx": 1601.0514,
+          "fy": 1601.0514,
+          "cx": 955.82275,
+          "cy": 717.7025
+        }
+      },
+      "video": {
+        "exists": true,
+        "size_bytes": 252331542,
+        "frame_timestamp_mapping_verified": false,
+        "note": "The video file exists, but this validator does not decode its frame metadata yet."
+      },
+      "unresolved_assumptions": [
+        "Depth PNG units are not documented in the supplied files.",
+        "Camera and world coordinate conventions are not documented in the supplied files.",
+        "Quaternion convention and pose direction are not documented in the supplied files.",
+        "The exact RGB-video to odometry timestamp mapping is not verified here."
+      ]
+    }
+  ]
+}
