@@ -1,0 +1,110 @@
+{
+  "pipeline_name": "Agentic-Stitcher offline pipeline",
+  "project_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher",
+  "overall_status": "completed",
+  "phase_records": [
+    {
+      "phase": "phase_0_validation",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "phase 0/validate_dataset.py",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher"
+      ],
+      "status": "completed",
+      "return_code": 0,
+      "duration_seconds": 1.4846689701080322
+    },
+    {
+      "phase": "phase_1_loading",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "phase 1/run_phase_1.py",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher"
+      ],
+      "status": "completed",
+      "return_code": 0,
+      "duration_seconds": 1.07944917678833
+    },
+    {
+      "phase": "phase_2_diagnostics",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "phase 2/generate_diagnostics.py",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher"
+      ],
+      "status": "completed",
+      "return_code": 0,
+      "duration_seconds": 23.30791211128235
+    },
+    {
+      "phase": "phase_3_point_cloud",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "phase 3/build_point_cloud.py",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher"
+      ],
+      "status": "completed",
+      "return_code": 0,
+      "duration_seconds": 10.75173306465149
+    },
+    {
+      "phase": "phase_4_room_plan",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "phase 4/extract_room_plan.py",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher"
+      ],
+      "status": "completed",
+      "return_code": 0,
+      "duration_seconds": 9.766103029251099
+    },
+    {
+      "phase": "phase_5_robustness",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "phase 5/evaluate_robustness.py",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher"
+      ],
+      "status": "completed",
+      "return_code": 0,
+      "duration_seconds": 1.4100980758666992
+    },
+    {
+      "phase": "phase_6_pose_graph",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "phase 6/build_pose_graph.py",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher"
+      ],
+      "status": "completed",
+      "return_code": 0,
+      "duration_seconds": 1.6118249893188477
+    },
+    {
+      "phase": "phase_6b_optimization",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "phase 6/optimize_pose_graph.py",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher"
+      ],
+      "status": "completed",
+      "return_code": 0,
+      "duration_seconds": 22.8332622051239
+    }
+  ],
+  "phase_reports": [
+    "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 0/phase_0_report.json",
+    "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 1/phase_1_report.json",
+    "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/phase_2_report.json",
+    "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/phase_3_report.json",
+    "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/phase_4_report.json",
+    "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 5/phase_5_report.json",
+    "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/phase_6_optimized_report.json",
+    "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/phase_6_report.json"
+  ],
+  "limitations": [
+    "Geometric outputs remain provisional until sensor conventions and physical measurements are confirmed.",
+    "Phase 6 optimization is diagnostic and may not improve the raw odometry cloud.",
+    "Damage detection and RGB-only processing are not included in this pipeline."
+  ]
+}
