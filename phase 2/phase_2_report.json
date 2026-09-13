@@ -1,0 +1,272 @@
+{
+  "report_name": "Agentic-Stitcher Phase 2 visual diagnostics",
+  "project_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher",
+  "output_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs",
+  "capture_reports": [
+    {
+      "capture_name": "single_room",
+      "sample_frame_ids": [
+        0,
+        857,
+        1714
+      ],
+      "depth_images": [
+        {
+          "frame_id": 0,
+          "minimum_valid_value": 506.0,
+          "maximum_valid_value": 1688.0,
+          "display_lower_percentile": 584.0,
+          "display_upper_percentile": 1541.979999999996,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_000000_depth.png"
+        },
+        {
+          "frame_id": 857,
+          "minimum_valid_value": 516.0,
+          "maximum_valid_value": 3418.0,
+          "display_lower_percentile": 560.0,
+          "display_upper_percentile": 3154.0,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_000857_depth.png"
+        },
+        {
+          "frame_id": 1714,
+          "minimum_valid_value": 1137.0,
+          "maximum_valid_value": 3732.0,
+          "display_lower_percentile": 1212.0,
+          "display_upper_percentile": 3553.0,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_001714_depth.png"
+        }
+      ],
+      "confidence_images": [
+        {
+          "frame_id": 0,
+          "value_counts": {
+            "0": 70,
+            "1": 644,
+            "2": 48438
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_000000_confidence.png"
+        },
+        {
+          "frame_id": 857,
+          "value_counts": {
+            "0": 1156,
+            "1": 5809,
+            "2": 42187
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_000857_confidence.png"
+        },
+        {
+          "frame_id": 1714,
+          "value_counts": {
+            "0": 768,
+            "1": 2059,
+            "2": 46325
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_001714_confidence.png"
+        }
+      ],
+      "sensor_map_pairs": [
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_000000_sensor_maps.png",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_000857_sensor_maps.png",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/frame_001714_sensor_maps.png"
+      ],
+      "trajectory": {
+        "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_room/trajectory.png",
+        "point_count": 1715,
+        "start": [
+          -0.05574204,
+          0.019246144,
+          0.23901562
+        ],
+        "end": [
+          -2.464216,
+          -0.08375231,
+          2.3115118
+        ]
+      },
+      "rgb_preview": {
+        "generated": false,
+        "reason": "RGB frame extraction is not enabled yet; the current environment has no video decoder available to this script."
+      }
+    },
+    {
+      "capture_name": "single_scan_floor_only",
+      "sample_frame_ids": [
+        0,
+        2625,
+        5250
+      ],
+      "depth_images": [
+        {
+          "frame_id": 0,
+          "minimum_valid_value": 242.0,
+          "maximum_valid_value": 1930.0,
+          "display_lower_percentile": 274.0,
+          "display_upper_percentile": 1761.0,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_000000_depth.png"
+        },
+        {
+          "frame_id": 2625,
+          "minimum_valid_value": 455.0,
+          "maximum_valid_value": 1547.0,
+          "display_lower_percentile": 502.0,
+          "display_upper_percentile": 1479.0,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_002625_depth.png"
+        },
+        {
+          "frame_id": 5250,
+          "minimum_valid_value": 301.0,
+          "maximum_valid_value": 1837.0,
+          "display_lower_percentile": 336.0,
+          "display_upper_percentile": 1633.0,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_005250_depth.png"
+        }
+      ],
+      "confidence_images": [
+        {
+          "frame_id": 0,
+          "value_counts": {
+            "0": 452,
+            "1": 1403,
+            "2": 47297
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_000000_confidence.png"
+        },
+        {
+          "frame_id": 2625,
+          "value_counts": {
+            "1": 46,
+            "2": 49106
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_002625_confidence.png"
+        },
+        {
+          "frame_id": 5250,
+          "value_counts": {
+            "0": 1139,
+            "1": 2630,
+            "2": 45383
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_005250_confidence.png"
+        }
+      ],
+      "sensor_map_pairs": [
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_000000_sensor_maps.png",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_002625_sensor_maps.png",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/frame_005250_sensor_maps.png"
+      ],
+      "trajectory": {
+        "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_floor_only/trajectory.png",
+        "point_count": 5251,
+        "start": [
+          0.19097431,
+          0.0018667877,
+          -0.044843256
+        ],
+        "end": [
+          0.040221937,
+          -0.012529306,
+          -0.12600905
+        ]
+      },
+      "rgb_preview": {
+        "generated": false,
+        "reason": "RGB frame extraction is not enabled yet; the current environment has no video decoder available to this script."
+      }
+    },
+    {
+      "capture_name": "single_scan_with_ceiling",
+      "sample_frame_ids": [
+        0,
+        4872,
+        9744
+      ],
+      "depth_images": [
+        {
+          "frame_id": 0,
+          "minimum_valid_value": 750.0,
+          "maximum_valid_value": 4480.0,
+          "display_lower_percentile": 813.0,
+          "display_upper_percentile": 4113.0,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_000000_depth.png"
+        },
+        {
+          "frame_id": 4872,
+          "minimum_valid_value": 311.0,
+          "maximum_valid_value": 3754.0,
+          "display_lower_percentile": 439.0,
+          "display_upper_percentile": 3500.0,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_004872_depth.png"
+        },
+        {
+          "frame_id": 9744,
+          "minimum_valid_value": 1225.0,
+          "maximum_valid_value": 2420.0,
+          "display_lower_percentile": 1395.0,
+          "display_upper_percentile": 2314.0,
+          "invalid_pixel_count": 0,
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_009744_depth.png"
+        }
+      ],
+      "confidence_images": [
+        {
+          "frame_id": 0,
+          "value_counts": {
+            "0": 1807,
+            "1": 6631,
+            "2": 40714
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_000000_confidence.png"
+        },
+        {
+          "frame_id": 4872,
+          "value_counts": {
+            "0": 475,
+            "1": 2892,
+            "2": 45785
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_004872_confidence.png"
+        },
+        {
+          "frame_id": 9744,
+          "value_counts": {
+            "1": 527,
+            "2": 48625
+          },
+          "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_009744_confidence.png"
+        }
+      ],
+      "sensor_map_pairs": [
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_000000_sensor_maps.png",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_004872_sensor_maps.png",
+        "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/frame_009744_sensor_maps.png"
+      ],
+      "trajectory": {
+        "output_file": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 2/outputs/single_scan_with_ceiling/trajectory.png",
+        "point_count": 9745,
+        "start": [
+          0.00091422483,
+          -0.00022267927,
+          -0.00021316137
+        ],
+        "end": [
+          0.3063678,
+          0.11876714,
+          0.20923233
+        ]
+      },
+      "rgb_preview": {
+        "generated": false,
+        "reason": "RGB frame extraction is not enabled yet; the current environment has no video decoder available to this script."
+      }
+    }
+  ]
+}
