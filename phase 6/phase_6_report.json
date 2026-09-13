@@ -1,0 +1,52 @@
+{
+  "report_name": "Agentic-Stitcher Phase 6 multi-room stitching prototype",
+  "capture_name": "single_scan_with_ceiling",
+  "capture_duration_seconds": 214.92937012499897,
+  "trajectory_metrics": {
+    "node_count": 326,
+    "path_length": 97.87086922851492,
+    "start_to_end_distance": 0.3890088399114637,
+    "horizontal_bounds": {
+      "minimum": [
+        -0.13795958743188777,
+        -8.67353541720927
+      ],
+      "maximum": [
+        2.0166825184944503,
+        0.2014501765328853
+      ]
+    },
+    "finite": true
+  },
+  "pose_graph": {
+    "node_count": 326,
+    "consecutive_edge_count": 325,
+    "loop_closure_candidate_count": 500,
+    "turning_point_candidate_count": 42,
+    "room_boundaries_inferred": false
+  },
+  "parameters": {
+    "pose_sample_step_frames": 30,
+    "loop_closure_distance": 0.75,
+    "minimum_loop_frame_gap": 240,
+    "turning_angle_degrees": 45.0,
+    "horizontal_axes": [
+      0,
+      2
+    ],
+    "coordinate_status": "provisional"
+  },
+  "evaluation": {
+    "status": "diagnostic_only",
+    "loop_candidates_require_depth_or_rgb_verification": true,
+    "room_count_verified": false,
+    "ground_truth_available": false
+  },
+  "outputs": {
+    "pose_graph_csv": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs/pose_graph.csv",
+    "loop_closure_candidates_csv": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs/loop_closure_candidates.csv",
+    "turning_point_candidates_csv": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs/turning_point_candidates.csv",
+    "trajectory_pose_graph": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs/trajectory_pose_graph.png",
+    "trajectory_turning_points": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs/trajectory_turning_points.png"
+  }
+}

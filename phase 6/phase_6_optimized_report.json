@@ -1,0 +1,114 @@
+{
+  "report_name": "Agentic-Stitcher Phase 6B pose-graph optimization",
+  "capture_name": "single_scan_with_ceiling",
+  "frame_count": 326,
+  "loop_measurement_candidates_checked": 6,
+  "verified_loop_measurement_count": 2,
+  "verified_loop_measurements": [
+    {
+      "first_frame_id": 5040,
+      "second_frame_id": 9600,
+      "first_node_id": 168,
+      "second_node_id": 320,
+      "before_fitness": 0.5149934810951761,
+      "before_rmse": 0.4291064811002814,
+      "after_fitness": 1.0,
+      "after_rmse": 0.08288691948156746,
+      "correction_translation": 1.2156559296132363,
+      "correction_rotation_degrees": 14.82844668402188,
+      "accepted": true
+    },
+    {
+      "first_frame_id": 3720,
+      "second_frame_id": 8430,
+      "first_node_id": 124,
+      "second_node_id": 281,
+      "before_fitness": 0.7526041666666666,
+      "before_rmse": 0.4854787332182246,
+      "after_fitness": 1.0,
+      "after_rmse": 0.039489856509419705,
+      "correction_translation": 0.8557790617050923,
+      "correction_rotation_degrees": 9.829526948932351,
+      "accepted": true
+    }
+  ],
+  "solver": {
+    "success": false,
+    "message": "The maximum number of function evaluations is exceeded.",
+    "function_evaluations": 100,
+    "raw_residual_sum": 9.130589532712673,
+    "optimized_residual_sum": 0.002336791555393662,
+    "loop_edge_weight": 2.0,
+    "maximum_loop_translation_correction": 1.5,
+    "maximum_loop_rotation_correction_degrees": 30.0
+  },
+  "loop_errors_before": [
+    {
+      "first_node_id": 168,
+      "second_node_id": 320,
+      "translation_error": 1.1912227806130138,
+      "rotation_error_degrees": 14.828446684022195
+    },
+    {
+      "first_node_id": 124,
+      "second_node_id": 281,
+      "translation_error": 0.8759129615484981,
+      "rotation_error_degrees": 9.829526948932138
+    }
+  ],
+  "loop_errors_after": [
+    {
+      "first_node_id": 168,
+      "second_node_id": 320,
+      "translation_error": 0.0003606356356288618,
+      "rotation_error_degrees": 0.06834086791214318
+    },
+    {
+      "first_node_id": 124,
+      "second_node_id": 281,
+      "translation_error": 0.0004048972186878989,
+      "rotation_error_degrees": 0.0517942636496982
+    }
+  ],
+  "cloud_metrics": {
+    "raw_point_count": 218492,
+    "optimized_point_count": 219430,
+    "raw_largest_plane_ratio": 0.07923333333333334,
+    "optimized_largest_plane_ratio": 0.0442,
+    "alignment_verdict": "optimized_cloud_not_improved",
+    "recommended_alignment": "raw_odometry",
+    "raw_bounds_minimum": [
+      -2.059079540268672,
+      -7.726412416230844,
+      -9.718311680469586
+    ],
+    "raw_bounds_maximum": [
+      3.6402553136957634,
+      5.535017870737797,
+      4.448999999999999
+    ],
+    "optimized_bounds_minimum": [
+      -3.400212886796718,
+      -7.693012898998586,
+      -9.640989115084361
+    ],
+    "optimized_bounds_maximum": [
+      4.038359639641257,
+      5.5283766581106875,
+      4.449
+    ]
+  },
+  "evaluation": {
+    "status": "diagnostic_only",
+    "loop_edges_are_depth_verified": true,
+    "room_boundaries_inferred": false,
+    "physical_ground_truth_available": false
+  },
+  "outputs": {
+    "raw_cloud": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs_optimized/raw_odometry_cloud.ply",
+    "optimized_cloud": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs_optimized/optimized_pose_graph_cloud.ply",
+    "trajectory_comparison": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs_optimized/trajectory_before_after.png",
+    "point_cloud_comparison": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs_optimized/point_cloud_before_after.png",
+    "loop_error_comparison": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 6/outputs_optimized/loop_error_before_after.png"
+  }
+}
