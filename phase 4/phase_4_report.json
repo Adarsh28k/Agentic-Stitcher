@@ -1,0 +1,771 @@
+{
+  "report_name": "Agentic-Stitcher Phase 4 provisional room plan extraction",
+  "project_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher",
+  "output_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs",
+  "capture_reports": [
+    {
+      "capture_name": "single_room",
+      "input_point_cloud": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_room/accumulated_filtered.ply",
+      "point_count": 86105,
+      "planes_detected": 12,
+      "floor_detected": true,
+      "ceiling_detected": true,
+      "wall_plane_count": 8,
+      "floor_height": -1.4757428557317676,
+      "ceiling_height_estimate": 0.8279752232558834,
+      "room_outline": {
+        "vertices": [
+          [
+            -2.059647253831909,
+            4.424662269905729
+          ],
+          [
+            -0.5643551548865056,
+            -1.491433932664243
+          ],
+          [
+            2.6358539497673172,
+            -0.06340469726617173
+          ],
+          [
+            0.30583552390841423,
+            5.4406396828657275
+          ]
+        ],
+        "area": 18.227517022899896,
+        "perimeter": 18.15785666414877,
+        "status": "estimated_convex_hull"
+      },
+      "plan_status": "diagnostic_only",
+      "plan_status_reason": "Pose convention and metric ground truth are not confirmed.",
+      "planes": [
+        {
+          "plane_number": 0,
+          "label": "floor",
+          "orientation": "horizontal",
+          "normal": [
+            -0.006641231797078175,
+            0.9999600515940501,
+            0.005982412242749299
+          ],
+          "offset": 1.4519146436984973,
+          "inlier_count": 18223,
+          "height_mean": -1.4757428557317676,
+          "height_minimum": -1.52311,
+          "height_maximum": -1.40213,
+          "normal_vertical_component": 0.9999600515940501,
+          "mean_residual": 0.008569112890181557
+        },
+        {
+          "plane_number": 1,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.9206237358060703,
+            0.02377878895301561,
+            0.389726193970078
+          ],
+          "offset": -2.366827861013237,
+          "inlier_count": 9603,
+          "height_mean": -0.3691675992790378,
+          "height_minimum": -1.52814,
+          "height_maximum": 0.367018,
+          "normal_vertical_component": 0.02377878895301561,
+          "mean_residual": 0.014536624797240194
+        },
+        {
+          "plane_number": 2,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.9339285106425146,
+            0.007203439397916412,
+            0.3573872514093012
+          ],
+          "offset": 0.35287582939230355,
+          "inlier_count": 6778,
+          "height_mean": -0.5360273774293302,
+          "height_minimum": -1.44068,
+          "height_maximum": 0.666291,
+          "normal_vertical_component": 0.007203439397916412,
+          "mean_residual": 0.010747389119224017
+        },
+        {
+          "plane_number": 3,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            -0.354066602683178,
+            0.013713708857053569,
+            0.9351196581474355
+          ],
+          "offset": -3.5429177872337223,
+          "inlier_count": 7121,
+          "height_mean": -0.7106528594031737,
+          "height_minimum": -1.4381,
+          "height_maximum": 0.145571,
+          "normal_vertical_component": 0.013713708857053569,
+          "mean_residual": 0.014472689010024447
+        },
+        {
+          "plane_number": 4,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            -0.39459555474310304,
+            -0.015146821593170384,
+            0.9187300593605324
+          ],
+          "offset": -4.900150694334875,
+          "inlier_count": 6236,
+          "height_mean": -0.4432436578604874,
+          "height_minimum": -1.53297,
+          "height_maximum": 0.656764,
+          "normal_vertical_component": 0.015146821593170384,
+          "mean_residual": 0.013872114617218803
+        },
+        {
+          "plane_number": 5,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            -0.39900832999905783,
+            0.006050916688039322,
+            0.9169273357243732
+          ],
+          "offset": -1.8778072406837998,
+          "inlier_count": 6198,
+          "height_mean": -0.6255430306455309,
+          "height_minimum": -1.42136,
+          "height_maximum": 0.271251,
+          "normal_vertical_component": 0.006050916688039322,
+          "mean_residual": 0.009606486497271988
+        },
+        {
+          "plane_number": 6,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            -0.00861555386572786,
+            0.9997659674819143,
+            0.019843953651896756
+          ],
+          "offset": 1.033793157492292,
+          "inlier_count": 3911,
+          "height_mean": -1.0570732436716954,
+          "height_minimum": -1.18626,
+          "height_maximum": -0.966271,
+          "normal_vertical_component": 0.9997659674819143,
+          "mean_residual": 0.015274982010440166
+        },
+        {
+          "plane_number": 7,
+          "label": "ceiling",
+          "orientation": "horizontal",
+          "normal": [
+            0.027909284023397513,
+            0.9994888447362764,
+            -0.015592341486928816
+          ],
+          "offset": 0.6808318556789296,
+          "inlier_count": 3110,
+          "height_mean": -0.6477676324758842,
+          "height_minimum": -0.788905,
+          "height_maximum": -0.49921,
+          "normal_vertical_component": 0.9994888447362764,
+          "mean_residual": 0.016678944005102773
+        },
+        {
+          "plane_number": 8,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            -0.4074937712787154,
+            -0.005355517662198299,
+            0.9131922824901774
+          ],
+          "offset": 1.1240913798189411,
+          "inlier_count": 3150,
+          "height_mean": -0.5111879115873016,
+          "height_minimum": -1.39661,
+          "height_maximum": 0.128162,
+          "normal_vertical_component": 0.005355517662198299,
+          "mean_residual": 0.01264459237590258
+        },
+        {
+          "plane_number": 9,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.020499904410044303,
+            0.9989539769674987,
+            -0.04087426843378724
+          ],
+          "offset": 0.9033101800161571,
+          "inlier_count": 2219,
+          "height_mean": -0.8149821586300136,
+          "height_minimum": -0.975894,
+          "height_maximum": -0.640901,
+          "normal_vertical_component": 0.9989539769674987,
+          "mean_residual": 0.018531875664890146
+        },
+        {
+          "plane_number": 10,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.9518474101997106,
+            -0.02347771018875974,
+            0.30567189079206597
+          ],
+          "offset": 0.2554507380849934,
+          "inlier_count": 2095,
+          "height_mean": -0.7420269238663485,
+          "height_minimum": -1.4349,
+          "height_maximum": -0.0309134,
+          "normal_vertical_component": 0.02347771018875974,
+          "mean_residual": 0.016967986693063684
+        },
+        {
+          "plane_number": 11,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.9888082607954635,
+            -0.005241669056651118,
+            0.14909979305200696
+          ],
+          "offset": 0.7726761742227963,
+          "inlier_count": 1696,
+          "height_mean": -0.5523736746757075,
+          "height_minimum": -1.43075,
+          "height_maximum": 0.0968913,
+          "normal_vertical_component": 0.005241669056651118,
+          "mean_residual": 0.015160101177819938
+        }
+      ],
+      "assumptions": {
+        "up_axis": 1,
+        "horizontal_axes": [
+          0,
+          2
+        ],
+        "plane_distance_threshold": 0.04,
+        "ransac_iterations": 1000,
+        "minimum_plane_points": 150,
+        "coordinate_system_status": "provisional",
+        "metric_accuracy_status": "not evaluated without physical ground truth"
+      },
+      "outputs": {
+        "detected_planes_3d": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_room/detected_planes_3d.png",
+        "room_outline_2d": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_room/room_outline_2d.png",
+        "floor_ceiling_candidates": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_room/floor_ceiling_candidates.png"
+      }
+    },
+    {
+      "capture_name": "single_scan_floor_only",
+      "input_point_cloud": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_floor_only/accumulated_filtered.ply",
+      "point_count": 99747,
+      "planes_detected": 12,
+      "floor_detected": true,
+      "ceiling_detected": true,
+      "wall_plane_count": 0,
+      "floor_height": -1.4052011838630363,
+      "ceiling_height_estimate": 1.323441377677247,
+      "room_outline": {
+        "vertices": [],
+        "area": null,
+        "perimeter": null,
+        "status": "not_enough_intersections"
+      },
+      "plan_status": "diagnostic_only",
+      "plan_status_reason": "Pose convention and metric ground truth are not confirmed.",
+      "planes": [
+        {
+          "plane_number": 0,
+          "label": "floor",
+          "orientation": "horizontal",
+          "normal": [
+            0.0022134398702273136,
+            0.999997281569655,
+            -0.0007331693128814247
+          ],
+          "offset": 1.4122007038326099,
+          "inlier_count": 21962,
+          "height_mean": -1.4052011838630363,
+          "height_minimum": -1.45171,
+          "height_maximum": -1.33752,
+          "normal_vertical_component": 0.999997281569655,
+          "mean_residual": 0.010073996008024184
+        },
+        {
+          "plane_number": 1,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.0546170644290329,
+            0.9981417301666504,
+            0.027019673815215146
+          ],
+          "offset": 0.8693833814010888,
+          "inlier_count": 5605,
+          "height_mean": -0.8251096205173953,
+          "height_minimum": -1.2173,
+          "height_maximum": -0.443201,
+          "normal_vertical_component": 0.9981417301666504,
+          "mean_residual": 0.020525264728672374
+        },
+        {
+          "plane_number": 2,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.02977296023283433,
+            0.9993810315692093,
+            -0.018738318458101998
+          ],
+          "offset": 0.5902494078567098,
+          "inlier_count": 5345,
+          "height_mean": -0.4819801854069224,
+          "height_minimum": -0.69597,
+          "height_maximum": -0.207821,
+          "normal_vertical_component": 0.9993810315692093,
+          "mean_residual": 0.019327395837055728
+        },
+        {
+          "plane_number": 3,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.00755452566583553,
+            0.9997398338938055,
+            -0.02152193457731901
+          ],
+          "offset": 0.366576379466381,
+          "inlier_count": 4987,
+          "height_mean": -0.2893004631040706,
+          "height_minimum": -0.428785,
+          "height_maximum": -0.0678461,
+          "normal_vertical_component": 0.9997398338938055,
+          "mean_residual": 0.01989306920686517
+        },
+        {
+          "plane_number": 4,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.03336216668356899,
+            0.9993783758648117,
+            0.011394195363825839
+          ],
+          "offset": 0.7137764363377174,
+          "inlier_count": 4712,
+          "height_mean": -0.6813920539049236,
+          "height_minimum": -0.910813,
+          "height_maximum": -0.445101,
+          "normal_vertical_component": 0.9993783758648117,
+          "mean_residual": 0.02047972945022987
+        },
+        {
+          "plane_number": 5,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.008783067358424115,
+            0.9996988875899384,
+            -0.022912701264084248
+          ],
+          "offset": 0.2579540078308189,
+          "inlier_count": 4445,
+          "height_mean": -0.17504232078335205,
+          "height_minimum": -0.316146,
+          "height_maximum": 0.0547402,
+          "normal_vertical_component": 0.9996988875899384,
+          "mean_residual": 0.019914316320878315
+        },
+        {
+          "plane_number": 6,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.03825293378917991,
+            0.9979158099790432,
+            0.05196873339221322
+          ],
+          "offset": 0.9188822697777443,
+          "inlier_count": 3492,
+          "height_mean": -1.0036701655211913,
+          "height_minimum": -1.35494,
+          "height_maximum": -0.580472,
+          "normal_vertical_component": 0.9979158099790432,
+          "mean_residual": 0.019454387389428392
+        },
+        {
+          "plane_number": 7,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.0401346612900468,
+            0.9941864927132905,
+            0.09991209471119983
+          ],
+          "offset": 0.10373470238137161,
+          "inlier_count": 3298,
+          "height_mean": -0.3523588279275622,
+          "height_minimum": -0.940127,
+          "height_maximum": 0.0471886,
+          "normal_vertical_component": 0.9941864927132905,
+          "mean_residual": 0.019560512943095753
+        },
+        {
+          "plane_number": 8,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.07016088361499671,
+            0.9973279208090203,
+            0.02035850645601056
+          ],
+          "offset": 0.785058188239299,
+          "inlier_count": 3307,
+          "height_mean": -0.7152827320834594,
+          "height_minimum": -1.13709,
+          "height_maximum": -0.257442,
+          "normal_vertical_component": 0.9973279208090203,
+          "mean_residual": 0.019100464330288343
+        },
+        {
+          "plane_number": 9,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.05273806104464541,
+            0.9959574972412255,
+            0.07271423936372859
+          ],
+          "offset": 0.02752136862497326,
+          "inlier_count": 3083,
+          "height_mean": -0.15339662050746025,
+          "height_minimum": -0.625537,
+          "height_maximum": 0.247916,
+          "normal_vertical_component": 0.9959574972412255,
+          "mean_residual": 0.019470059601143126
+        },
+        {
+          "plane_number": 10,
+          "label": "ceiling",
+          "orientation": "horizontal",
+          "normal": [
+            0.011603043398547537,
+            0.9996361642245915,
+            -0.02434971371981887
+          ],
+          "offset": 0.18817504726208314,
+          "inlier_count": 2850,
+          "height_mean": -0.08175980618578947,
+          "height_minimum": -0.237346,
+          "height_maximum": 0.159049,
+          "normal_vertical_component": 0.9996361642245915,
+          "mean_residual": 0.018365646500325225
+        },
+        {
+          "plane_number": 11,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.01171316885453279,
+            0.9996730496329053,
+            -0.02272873760313784
+          ],
+          "offset": 0.4549299383447781,
+          "inlier_count": 2965,
+          "height_mean": -0.3777547831365936,
+          "height_minimum": -0.529424,
+          "height_maximum": -0.165143,
+          "normal_vertical_component": 0.9996730496329053,
+          "mean_residual": 0.01810037704344475
+        }
+      ],
+      "assumptions": {
+        "up_axis": 1,
+        "horizontal_axes": [
+          0,
+          2
+        ],
+        "plane_distance_threshold": 0.04,
+        "ransac_iterations": 1000,
+        "minimum_plane_points": 150,
+        "coordinate_system_status": "provisional",
+        "metric_accuracy_status": "not evaluated without physical ground truth"
+      },
+      "outputs": {
+        "detected_planes_3d": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_scan_floor_only/detected_planes_3d.png",
+        "room_outline_2d": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_scan_floor_only/room_outline_2d.png",
+        "floor_ceiling_candidates": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_scan_floor_only/floor_ceiling_candidates.png"
+      }
+    },
+    {
+      "capture_name": "single_scan_with_ceiling",
+      "input_point_cloud": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/outputs/single_scan_with_ceiling/accumulated_filtered.ply",
+      "point_count": 105309,
+      "planes_detected": 12,
+      "floor_detected": true,
+      "ceiling_detected": true,
+      "wall_plane_count": 8,
+      "floor_height": -1.4935661898261898,
+      "ceiling_height_estimate": 2.4389495363014806,
+      "room_outline": {
+        "vertices": [
+          [
+            5.673012396423463,
+            8.149141273272456
+          ],
+          [
+            -3.0578165430213238,
+            4.137086370261905
+          ],
+          [
+            -1.920610472267189,
+            2.02948748349982
+          ],
+          [
+            7.764947208098607,
+            -3.1029046622388936
+          ],
+          [
+            6.396373498248344,
+            6.671741786554615
+          ]
+        ],
+        "area": 63.12899880377396,
+        "perimeter": 34.479699248673406,
+        "status": "estimated_convex_hull"
+      },
+      "plan_status": "diagnostic_only",
+      "plan_status_reason": "Pose convention and metric ground truth are not confirmed.",
+      "planes": [
+        {
+          "plane_number": 0,
+          "label": "floor",
+          "orientation": "horizontal",
+          "normal": [
+            -0.0006272938623442883,
+            0.9999996549429768,
+            0.0005446249513000959
+          ],
+          "offset": 1.4916837004890307,
+          "inlier_count": 10989,
+          "height_mean": -1.4935661898261898,
+          "height_minimum": -1.53361,
+          "height_maximum": -1.44809,
+          "normal_vertical_component": 0.9999996549429768,
+          "mean_residual": 0.006903138984490283
+        },
+        {
+          "plane_number": 1,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.8316867520432154,
+            -0.03359958318491789,
+            0.5542275836563955
+          ],
+          "offset": -2.45349108497191,
+          "inlier_count": 4749,
+          "height_mean": -0.144361591021773,
+          "height_minimum": -1.4495,
+          "height_maximum": 0.987162,
+          "normal_vertical_component": 0.03359958318491789,
+          "mean_residual": 0.01847889050938614
+        },
+        {
+          "plane_number": 2,
+          "label": "ceiling",
+          "orientation": "horizontal",
+          "normal": [
+            -0.014685338136577747,
+            0.9998871821147101,
+            0.003156562452905638
+          ],
+          "offset": -0.9454402763704386,
+          "inlier_count": 5504,
+          "height_mean": 0.9453833464752908,
+          "height_minimum": 0.797985,
+          "height_maximum": 1.06476,
+          "normal_vertical_component": 0.9998871821147101,
+          "mean_residual": 0.013538272682269176
+        },
+        {
+          "plane_number": 3,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.8763011444935173,
+            0.0096923690967719,
+            0.481666235209241
+          ],
+          "offset": -2.283453837013548,
+          "inlier_count": 4810,
+          "height_mean": 0.2507458621769854,
+          "height_minimum": -1.44772,
+          "height_maximum": 1.57093,
+          "normal_vertical_component": 0.0096923690967719,
+          "mean_residual": 0.014620673710243164
+        },
+        {
+          "plane_number": 4,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            -0.4175232970829263,
+            0.011545137380184844,
+            0.9085928715304095
+          ],
+          "offset": -5.01839340299462,
+          "inlier_count": 4864,
+          "height_mean": -0.2868742903061266,
+          "height_minimum": -1.45313,
+          "height_maximum": 0.918917,
+          "normal_vertical_component": 0.011545137380184844,
+          "mean_residual": 0.013453688137792541
+        },
+        {
+          "plane_number": 5,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.8800402258990269,
+            0.00703504618832534,
+            0.4748470373970106
+          ],
+          "offset": 0.7370256620345977,
+          "inlier_count": 5661,
+          "height_mean": 0.17475371285847024,
+          "height_minimum": -1.44578,
+          "height_maximum": 2.10323,
+          "normal_vertical_component": 0.00703504618832534,
+          "mean_residual": 0.010229057003848864
+        },
+        {
+          "plane_number": 6,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.8752076754702512,
+            -0.0217903584379759,
+            0.4832563554440893
+          ],
+          "offset": -5.328988340412313,
+          "inlier_count": 5260,
+          "height_mean": 0.08795619102055136,
+          "height_minimum": -1.45018,
+          "height_maximum": 1.59547,
+          "normal_vertical_component": 0.0217903584379759,
+          "mean_residual": 0.015432554044396918
+        },
+        {
+          "plane_number": 7,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            -0.48553201866653106,
+            -0.0870818194616323,
+            0.8698709189120275
+          ],
+          "offset": -2.8279724831608575,
+          "inlier_count": 3380,
+          "height_mean": 0.05651377866863905,
+          "height_minimum": -1.44264,
+          "height_maximum": 1.27634,
+          "normal_vertical_component": 0.0870818194616323,
+          "mean_residual": 0.015112051306265367
+        },
+        {
+          "plane_number": 8,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.8979045337608185,
+            -0.02220058121448867,
+            0.43963005179981285
+          ],
+          "offset": -8.709588988419165,
+          "inlier_count": 4293,
+          "height_mean": 0.10826475964104355,
+          "height_minimum": -1.4518,
+          "height_maximum": 1.57595,
+          "normal_vertical_component": 0.02220058121448867,
+          "mean_residual": 0.010839833456287643
+        },
+        {
+          "plane_number": 9,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.03583741821638824,
+            0.9993573798693675,
+            -0.0007118681173674063
+          ],
+          "offset": -0.7108239373078791,
+          "inlier_count": 3158,
+          "height_mean": 0.7247310259658011,
+          "height_minimum": 0.435946,
+          "height_maximum": 0.81933,
+          "normal_vertical_component": 0.9993573798693675,
+          "mean_residual": 0.014082073208385658
+        },
+        {
+          "plane_number": 10,
+          "label": "horizontal_candidate",
+          "orientation": "horizontal",
+          "normal": [
+            0.009868145357184093,
+            0.9997146724385523,
+            -0.021753009407615813
+          ],
+          "offset": 0.7920590902019936,
+          "inlier_count": 2861,
+          "height_mean": -0.7074310290108354,
+          "height_minimum": -0.867461,
+          "height_maximum": -0.533773,
+          "normal_vertical_component": 0.9997146724385523,
+          "mean_residual": 0.018400905404636254
+        },
+        {
+          "plane_number": 11,
+          "label": "wall",
+          "orientation": "vertical",
+          "normal": [
+            0.9271990874463444,
+            -0.010398986006390184,
+            0.3744245095192158
+          ],
+          "offset": -6.053379983082003,
+          "inlier_count": 2331,
+          "height_mean": -0.16567583450278853,
+          "height_minimum": -1.45102,
+          "height_maximum": 1.58971,
+          "normal_vertical_component": 0.010398986006390184,
+          "mean_residual": 0.01617735677439221
+        }
+      ],
+      "assumptions": {
+        "up_axis": 1,
+        "horizontal_axes": [
+          0,
+          2
+        ],
+        "plane_distance_threshold": 0.04,
+        "ransac_iterations": 1000,
+        "minimum_plane_points": 150,
+        "coordinate_system_status": "provisional",
+        "metric_accuracy_status": "not evaluated without physical ground truth"
+      },
+      "outputs": {
+        "detected_planes_3d": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_scan_with_ceiling/detected_planes_3d.png",
+        "room_outline_2d": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_scan_with_ceiling/room_outline_2d.png",
+        "floor_ceiling_candidates": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/outputs/single_scan_with_ceiling/floor_ceiling_candidates.png"
+      }
+    }
+  ]
+}
