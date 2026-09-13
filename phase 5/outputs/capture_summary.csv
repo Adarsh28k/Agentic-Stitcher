@@ -1,0 +1,4 @@
+capture_name,capture_role,plan_status,point_count,phase_3_frame_count,planes_detected,wall_plane_count,floor_detected,ceiling_detected,ceiling_height_estimate,outline_area,outline_perimeter,outline_vertex_count,filtered_point_cloud_diagonal,phase_4_outputs_exist
+single_scan_with_ceiling,development,diagnostic_only,105309,40,12,8,True,True,2.4389495363014806,63.12899880377396,34.479699248673406,5,18.459175296508494,True
+single_scan_floor_only,robustness,diagnostic_only,99747,40,12,0,True,True,1.323441377677247,,,0,16.126279808883723,True
+single_room,held_out_smoke_test,diagnostic_only,86105,40,12,8,True,True,0.8279752232558834,18.227517022899896,18.15785666414877,4,10.417495448172044,True

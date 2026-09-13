@@ -1,0 +1,89 @@
+{
+  "report_name": "Agentic-Stitcher Phase 5 cross-capture robustness evaluation",
+  "project_root": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher",
+  "input_reports": {
+    "phase_3": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 3/phase_3_report.json",
+    "phase_4": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 4/phase_4_report.json"
+  },
+  "capture_roles": {
+    "single_scan_with_ceiling": "development",
+    "single_scan_floor_only": "robustness",
+    "single_room": "held_out_smoke_test"
+  },
+  "comparison": {
+    "evaluation_status": "diagnostic_only",
+    "formal_ground_truth_available": false,
+    "all_phase_4_outputs_exist": true,
+    "plan_statuses": [
+      "diagnostic_only",
+      "diagnostic_only",
+      "diagnostic_only"
+    ],
+    "outline_area_minimum": 18.227517022899896,
+    "outline_area_maximum": 63.12899880377396,
+    "outline_area_range": 44.901481780874064,
+    "ceiling_height_minimum": 0.8279752232558834,
+    "ceiling_height_maximum": 2.4389495363014806,
+    "ceiling_height_range": 1.6109743130455971,
+    "interpretation": "The captures are different trajectories and coverage patterns. Differences are reported as robustness evidence, not as accuracy error."
+  },
+  "captures": [
+    {
+      "capture_name": "single_scan_with_ceiling",
+      "capture_role": "development",
+      "plan_status": "diagnostic_only",
+      "point_count": 105309,
+      "phase_3_frame_count": 40,
+      "planes_detected": 12,
+      "wall_plane_count": 8,
+      "floor_detected": true,
+      "ceiling_detected": true,
+      "ceiling_height_estimate": 2.4389495363014806,
+      "outline_area": 63.12899880377396,
+      "outline_perimeter": 34.479699248673406,
+      "outline_vertex_count": 5,
+      "filtered_point_cloud_diagonal": 18.459175296508494,
+      "phase_4_outputs_exist": true
+    },
+    {
+      "capture_name": "single_scan_floor_only",
+      "capture_role": "robustness",
+      "plan_status": "diagnostic_only",
+      "point_count": 99747,
+      "phase_3_frame_count": 40,
+      "planes_detected": 12,
+      "wall_plane_count": 0,
+      "floor_detected": true,
+      "ceiling_detected": true,
+      "ceiling_height_estimate": 1.323441377677247,
+      "outline_area": NaN,
+      "outline_perimeter": NaN,
+      "outline_vertex_count": 0,
+      "filtered_point_cloud_diagonal": 16.126279808883723,
+      "phase_4_outputs_exist": true
+    },
+    {
+      "capture_name": "single_room",
+      "capture_role": "held_out_smoke_test",
+      "plan_status": "diagnostic_only",
+      "point_count": 86105,
+      "phase_3_frame_count": 40,
+      "planes_detected": 12,
+      "wall_plane_count": 8,
+      "floor_detected": true,
+      "ceiling_detected": true,
+      "ceiling_height_estimate": 0.8279752232558834,
+      "outline_area": 18.227517022899896,
+      "outline_perimeter": 18.15785666414877,
+      "outline_vertex_count": 4,
+      "filtered_point_cloud_diagonal": 10.417495448172044,
+      "phase_4_outputs_exist": true
+    }
+  ],
+  "outputs": {
+    "capture_summary_csv": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 5/outputs/capture_summary.csv",
+    "plan_metrics_comparison": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 5/outputs/plan_metrics_comparison.png",
+    "room_outline_comparison": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 5/outputs/room_outline_comparison.png",
+    "point_cloud_bounds_comparison": "/Users/sarthakkumar/Documents/Internship/Agents/Agentic-Stitcher/phase 5/outputs/point_cloud_bounds_comparison.png"
+  }
+}
